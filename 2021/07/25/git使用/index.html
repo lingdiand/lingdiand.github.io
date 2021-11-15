@@ -14,7 +14,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="Git介绍1.什么是Git?git为一个分布式的版本控制软件，由林纳斯创作，最初是用于更好地管理Linux内核的开发，因为提交Linux功能的人太多了，最终都需要手动进行合并代码
+  <meta name="description" content="一、Git介绍1.什么是Git?git为一个分布式的版本控制软件，由林纳斯创作，最初是用于更好地管理Linux内核的开发，因为提交Linux功能的人太多了，最终都需要手动进行合并代码
 分布式在于每个人都可以拷贝完整的项目到本地进行开发
 版本控制：Git会保留每次提交时的commitID，这样可以回滚到之前的版本">
   <meta name="author" content="">
@@ -187,7 +187,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2.2k 字
+      2.6k 字
     </span>
   
 
@@ -197,7 +197,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      25
+      29
        分钟
     </span>
   
@@ -230,7 +230,7 @@
             <h1 style="display: none">git使用</h1>
             
             <div class="markdown-body">
-              <h1 id="Git介绍"><a href="#Git介绍" class="headerlink" title="Git介绍"></a>Git介绍</h1><h2 id="1-什么是Git"><a href="#1-什么是Git" class="headerlink" title="1.什么是Git?"></a>1.什么是Git?</h2><p>git为一个分布式的版本控制软件，由林纳斯创作，最初是用于更好地管理Linux内核的开发，因为提交Linux功能的人太多了，最终都需要手动进行合并代码</p>
+              <h1 id="一、Git介绍"><a href="#一、Git介绍" class="headerlink" title="一、Git介绍"></a>一、Git介绍</h1><h2 id="1-什么是Git"><a href="#1-什么是Git" class="headerlink" title="1.什么是Git?"></a>1.什么是Git?</h2><p>git为一个分布式的版本控制软件，由林纳斯创作，最初是用于更好地管理Linux内核的开发，因为提交Linux功能的人太多了，最终都需要手动进行合并代码</p>
 <p>分布式在于每个人都可以拷贝完整的项目到本地进行开发</p>
 <p>版本控制：Git会保留每次提交时的commitID，这样可以回滚到之前的版本</p>
 <span id="more"></span>
@@ -247,7 +247,7 @@
 <p><img src="https://gitee.com/lingdiand/image-repo/raw/master/20210724212912.png" srcset="/img/loading.gif" lazyload></p>
 <p>config文件：用于配置本地仓库的一些信息，仓库名、当前分支、绑定的远程仓库地址</p>
 <p>Index（索引）：进行过提交的操作后会有该文件。将工作目录下所有文件（包含子目录）生成快照，存放到一个临时的存储区域，Git 称该区域为索引</p>
-<h1 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h1><h2 id="1-基本命令"><a href="#1-基本命令" class="headerlink" title="1.基本命令"></a>1.基本命令</h2><blockquote>
+<h1 id="二、命令"><a href="#二、命令" class="headerlink" title="二、命令"></a>二、命令</h1><h2 id="1-基本命令"><a href="#1-基本命令" class="headerlink" title="1.基本命令"></a>1.基本命令</h2><blockquote>
 <p> 命令的操作都是在工作区下进行</p>
 <p> git中可以使用Linux命令</p>
 <p> git中的复制粘贴可以选中要复制的内容，按鼠标中键</p>
@@ -309,7 +309,7 @@
 <p> 而从远程分支 checkout 出来的本地分支，即checkout分支本身来自远程仓库，称为跟踪分支(tracking  branch)。跟踪分支是一种和远程分支有直接联系的本地分支。在跟踪分支里输入git push，Git会自行推断应该向哪个服务器的哪个分支推送数据。反过来，在这些分支里运行git pull 会获取所有远程索引，并把它们的数据都合并到本地分支中来</p>
 <p> 在克隆仓库时，Git 通常会自动创建一个名为 master 的分支来跟踪 origin/master。这正是 git push 和 git pull  一开始就能正常工作的原因。当然，你可以随心所欲地设定为其它跟踪分支，比如 origin 上除了 master 之外的其它分支</p>
 </blockquote>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><blockquote>
+<h1 id="三、其他"><a href="#三、其他" class="headerlink" title="三、其他"></a>三、其他</h1><h2 id="1-git-fetch和git-pull区别"><a href="#1-git-fetch和git-pull区别" class="headerlink" title="1.git fetch和git pull区别"></a>1.git fetch和git pull区别</h2><blockquote>
 <p>pull=fetch+merge    git fetch并没有更改本地仓库的代码，只是拉取了远程仓库的commitID</p>
 </blockquote>
 <blockquote>
@@ -325,6 +325,32 @@
 <p>Git 中的分支，其实本质上仅仅是个指向 commit 对象的可变指针，是commit序列的集合载体</p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1BE411g7SV">https://www.bilibili.com/video/BV1BE411g7SV</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/halaoda/article/details/78661334">https://blog.csdn.net/halaoda/article/details/78661334</a>    </p>
+<h2 id="2-git创建分支并推送到远程"><a href="#2-git创建分支并推送到远程" class="headerlink" title="2.git创建分支并推送到远程"></a>2.git创建分支并推送到远程</h2><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git checkout -b dev  	<span class="hljs-comment">#本地创建dev分支</span><br></code></pre></div></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git push origin dev:dev	<span class="hljs-comment">#将dev分支推送至远端。冒号前的dev指本地dev，冒号后的dev指远端的，没有会自动创建</span><br></code></pre></div></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git branch --set-upstream-to=origin/dev  <span class="hljs-comment">#建立与远端的链接，这样代码才能提交上去</span><br></code></pre></div></td></tr></table></figure>
+
+<h2 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3.删除分支"></a>3.删除分支</h2><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git branch -d dev	<span class="hljs-comment">#删除本地分支</span><br></code></pre></div></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git push origin :dev <span class="hljs-comment">#在origin repository里面查找dev。用一个空的去更新它，就相当于删除了</span><br>git push origin --delete dev<br></code></pre></div></td></tr></table></figure>
+
+<h2 id="4-git多人操作同一分支"><a href="#4-git多人操作同一分支" class="headerlink" title="4.git多人操作同一分支"></a>4.git多人操作同一分支</h2><ul>
+<li><p><strong>不同人修改了不同文件</strong></p>
+<p>首先使用<code>fetch</code>命令将远端仓库的变更拉取下来，再使用<code>merge</code>合并当前分支和远端分支，然后向远端进行<code>push</code></p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git fetch origin dev //拉取<br>git merge dev dev	 //本地合并<br>git push origin dev	 //推送<br></code></pre></div></td></tr></table></figure>
+
+<ul>
+<li><p><strong>不同人修改了相同文件的不同区域</strong></p>
+<p>和第一步相同，因为在git中修改的是文件的不同位置，git可以智能的帮我们进行commit</p>
+</li>
+<li><p><strong>不同人修改了相同文件的相同区域</strong></p>
+<p>不同人修改了同一文件的相同区域时，后push到远端的人在push时会报错，需要我们pull拉取到最新的</p>
+<p>使用git pull拉取远端的最新内容时，git会提醒需要解决冲突，需要手动解决，解决冲突后重新commit后push即可。</p>
+</li>
+</ul>
 
             </div>
             <hr>
@@ -351,6 +377,12 @@
                 <div class="post-prevnext">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/2021/08/20/Vue%E5%AD%A6%E4%B9%A0/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Vue学习</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">
